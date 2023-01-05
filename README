@@ -1,0 +1,24 @@
+npm run start - start development server
+npm run test - runs test associated with the project
+npm run build - builds a production version of the app
+
+install docker volume:
+#docker run -it -p 3000:3000 -v /home/node/app/node_modules -v ~/dev/docker-containers-examples/react-project/frontend:/home/node/app <image_id>
+
+run application with docker-compose:
+#docker-compose up
+
+
+run tests on the application
+#docker run -it <image_id> npm run test
+
+(https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/29412500#overview) 
+
+run interactive test on active container:
+#docker exec -it <image_id> sh
+-> run 
+#ps 
+
+
+
+
