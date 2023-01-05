@@ -1,12 +1,9 @@
+#needed for elasticbeanstalk deployment to work
 version: '3'
 services:
-  web: 
-    build: 
+  web:
+    build:
       context: .
-      dockerfile: Dockerfile.dev
-    ports: 
-      - "3000:3000"
-    volumes:
-      - /home/node/app/node_modules
-      - ~/dev/docker-containers-examples/react-project/frontend:/home/node/app
-
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
